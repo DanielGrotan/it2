@@ -1,0 +1,162 @@
+{
+  "topics": {
+    "utdanning": [
+      {
+        "question": "Private skoler er et viktig supplement til den offentlige skolen i Bærum",
+        "arguments": "De siste årene har det kommet privat eide skoler som tilbyr elevene fordypning i temaer som matematikk eller idrett. I tillegg finnes det friskoler med annen pedagogikk eller livssyn.\n\nTilhengerne mener det er fint at elevene kan velge noe annet enn den offentlige skolen.\n\nAndre mener det er en verdi om alle barn kan gå i den offentlige skolen og lære det samme.",
+        "positions": [
+          ["SV", -2],
+          ["AP", -1],
+          ["R", -1],
+          ["SP", 1],
+          ["MDG", 1],
+          ["V", 1],
+          ["H", 2],
+          ["FRP", 2],
+          ["KRF", 2]
+        ]
+      },
+      {
+        "question": "Gratis skolemat kan gjøre at elevene lærer mer, og det bør innføres i Bærumskolen",
+        "arguments": "Motstandere av gratis skolemat peker gjerne på at dette «spiser av» penger som kunne gått til undervisning, og at det er foreldrenes oppgave å sørge for matpakke til barna sine.\n\nTilhengerne peker på at mange elever like fullt er sultne på skolen og hevder at et mattilbud gir roligere klasser og bedre læringsutbytte.",
+        "positions": [
+          ["H", -2],
+          ["FRP", -2],
+          ["KRF", -1],
+          ["SP", 1],
+          ["V", 1],
+          ["AP", 2],
+          ["MDG", 2],
+          ["SV", 2],
+          ["R", 2]
+        ]
+      },
+      {
+        "question": "Store barnehager med mange barn er det beste for barna i Bærum",
+        "arguments": "Noen mener det er et kvalitetstegn med store barnehager fordi de mener at fagmiljøene blir større og bedre der.\n\nAndre mener det er fint at barnehagene er små og nær der folk bor. Dette kan også gi mindre bilkjøring.",
+        "positions": [
+          ["AP", -2],
+          ["SP", -2],
+          ["MDG", -2],
+          ["SV", -2],
+          ["V", -2],
+          ["R", -2],
+          ["KRF", -1],
+          ["H", 1],
+          ["FRP", 1]
+        ]
+      }
+    ],
+    "miljø og energi": [
+      {
+        "question": "Det er en dårlig idé å forsyne oljeplattformer med strøm fra land",
+        "arguments": "Å pumpe opp olje krever energi. I dag lager gasskraftverk på plattformene denne kraften. Strøm fra land kan kutte CO2-utslipp fra oljeproduksjonen. Det kan hjelpe oss å nå klimamålene.\n\nMotstanderne mener det blir for dyrt og vil gi høye strømpriser. Strømmen trengs til andre formål. Noen mener også det forlenger oljealderen.\n\nTilhengerne mener det er avgjørende å elektrifisere når olje- og gassproduksjonen står for 25-30 prosent av norske utslipp.\n\nDette spørsmålet handler om nasjonal politikk, det er derfor besvart av partiene sentralt. Lister uten nasjonale partier har svart på et utvalg nasjonale spørsmål.",
+        "positions": [
+          ["AP", -1],
+          ["H", -1],
+          ["V", -1],
+          ["SP", 1],
+          ["MDG", 1],
+          ["SV", 1],
+          ["FRP", 2],
+          ["KRF", 2],
+          ["R", 2]
+        ]
+      },
+      {
+        "question": "Norge må slutte å lete etter olje og gass",
+        "arguments": "Siden første oljefunn i 1969 har utvinning av petroleum vært avgjørende for norsk økonomi. Men kravet om å fase ut olje og gass som energikilde har fått internasjonal oppslutning.\n\nDe som mener Norge bør slutte å lete, peker på at forbrenning av olje og gass gir utslipp av store mengder klimagasser.\n\nDe som vil lete videre, mener olje og gass fremdeles vil være viktige energikilder, og de viser til store konsekvenser for norsk økonomi.\n\nDette spørsmålet handler om nasjonal politikk, det er derfor besvart av partiene sentralt. Lister uten nasjonale partier har svart på et utvalg nasjonale spørsmål.",
+        "positions": [
+          ["AP", -2],
+          ["H", -2],
+          ["SP", -2],
+          ["FRP", -2],
+          ["KRF", 1],
+          ["MDG", 2],
+          ["SV", 2],
+          ["V", 2],
+          ["R", 2]
+        ]
+      },
+      {
+        "question": "Det vil være bra med flere utenlandskabler slik at vi kan selge mer norsk kraft",
+        "arguments": "Det er 17 kraftkabler mellom Norge og utlandet. De fleste binder Norden sammen, men kablene til Tyskland og Storbritannia har skapt konflikter. Strømmen som blir eksportert i kablene, gir Norge inntekter.\n\nMen motstanderne mener kablene har ført til at strømprisene har skutt i været, og at vi eksporterer kraft vi trenger her.\n\nTilhengerne peker på forsyningssikkerhet. Vi kjøper strøm til Norge og unngår rasjonering når vår egen produksjon er lav.\n\nDette spørsmålet handler om nasjonal politikk, det er derfor besvart av partiene sentralt. Lister uten nasjonale partier har svart på et utvalg nasjonale spørsmål.",
+        "positions": [
+          ["SP", -2],
+          ["FRP", -2],
+          ["SV", -2],
+          ["R", -2],
+          ["AP", -1],
+          ["KRF", -1],
+          ["H", 1],
+          ["MDG", 2],
+          ["V", 2]
+        ]
+      }
+    ],
+    "kjønn og mangfold": [
+      {
+        "question": "Det finnes mer enn bare to kjønn",
+        "arguments": "Oppfatningen av kjønn er i endring. Før var det vanlig å si at det var to: mann og kvinne. Nå bruker man oftere ordet kjønnsidentitet.\n\nNoen mener samfunnet har godt av mer mangfoldig tenking. Andre mener kjønn bare er biologi, og at vi er i ferd med å se bort fra en naturlig todeling.\n\nNoen politiske saker knyttet til kjønnsdebatten er diskusjonen om innføring av et tredje juridisk kjønn og spørsmålet om hvilket helsetilbud transpersoner skal få.\n\nDette spørsmålet handler om nasjonal politikk, det er derfor besvart av partiene sentralt. Lister uten nasjonale partier har svart på et utvalg nasjonale spørsmål.",
+        "positions": [
+          ["FRP", -2],
+          ["KRF", -2],
+          ["SP", -1],
+          ["AP", 1],
+          ["H", 1],
+          ["MDG", 2],
+          ["SV", 2],
+          ["V", 2],
+          ["R", 2]
+        ]
+      },
+      {
+        "question": "Jeg støtter pride-markeringene",
+        "arguments": "I juni feirer vi pride i Norge. Pride er en feiring av mangfold, og en markering av at det finnes ulik kjærlighet, seksualitet og kjønnsidentitet.\n\nMan kan se på pride-markeringen som politikk. For mange er den en viktig arena for å kjempe for skeives rettigheter.\n\nDe som er kritiske til pride, mener markeringen støtter det noen kaller radikal kjønnsteori. De er redd for at det tradisjonelle synet på kjønn og seksualmoral blir opphevet.\n\nDette spørsmålet handler om nasjonal politikk, det er derfor besvart av partiene sentralt. Lister uten nasjonale partier har svart på et utvalg nasjonale spørsmål.",
+        "positions": [
+          ["KRF", -1],
+          ["FRP", 1],
+          ["AP", 2],
+          ["H", 2],
+          ["SP", 2],
+          ["MDG", 2],
+          ["SV", 2],
+          ["V", 2],
+          ["R", 2]
+        ]
+      }
+    ],
+    "sosial ulikhet": [
+      {
+        "question": "De som er avhengig av trygdepenger fra Nav, får for lite penger i dag",
+        "arguments": "Folk i arbeidsfør alder som har mistet jobben eller ikke kan jobbe, kan ha rett på penger fra Nav. For eksempel dagpenger, arbeidsavklaringspenger eller uføretrygd. (Vi spør altså ikke om alderpensjonister.)\n\nMange av støttebeløpene ligger på i overkant av 60 prosent av tidligere inntekt.\n\nNoen mener trygdebeløpene er for lave og fører til fattigdom.\n\nAndre er opptatt av at beløpene ikke skal være for høye fordi det alltid skal lønne seg å jobbe.\n\nDette spørsmålet handler om nasjonal politikk, det er derfor besvart av partiene sentralt. Lister uten nasjonale partier har svart på et utvalg nasjonale spørsmål.",
+        "positions": [
+          ["H", -2],
+          ["FRP", -2],
+          ["SP", -1],
+          ["AP", 1],
+          ["MDG", 1],
+          ["KRF", 1],
+          ["V", 1],
+          ["SV", 2],
+          ["R", 2]
+        ]
+      },
+      {
+        "question": "Det er unødvendig å avvikle au pair-ordningen",
+        "arguments": "Au pair-ordningen som ble innført 1969, har vært ment som en kulturutveksling der en person kan dra til et annet land og bo hos en familie som betaler kost, losji og lommepenger mot at au pairen passer barn og gjør litt husarbeid. Ordningen blir nå lagt ned i Norge.\n\nKritikerne mener den har vært et smutthull for billig arbeidskraft og utnyttelse av unge kvinner.\n\nAndre mener det har gitt unge mennesker en mulighet til å oppleve andre kulturer.\n\nDette spørsmålet handler om nasjonal politikk, det er derfor besvart av partiene sentralt. Lister uten nasjonale partier har svart på et utvalg nasjonale spørsmål.",
+        "positions": [
+          ["AP", -2],
+          ["SV", -2],
+          ["R", -2],
+          ["SP", -1],
+          ["MDG", -1],
+          ["FRP", 1],
+          ["KRF", 1],
+          ["V", 1],
+          ["H", 1]
+        ]
+      }
+    ]
+  }
+}
