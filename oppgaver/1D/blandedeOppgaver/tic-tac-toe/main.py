@@ -7,7 +7,7 @@ from tic_tac_toe.types import Board
 def game_loop(board: Board, consecutive_to_win: int) -> None:
     current_player_index = 0
 
-    while True:
+    for _ in range(len(board) * len(board[0])):
         current_player_symbol = PLAYER_SYMBOLS[current_player_index]
 
         print(f"Player {current_player_symbol}'s turn")
@@ -22,6 +22,8 @@ def game_loop(board: Board, consecutive_to_win: int) -> None:
             break
 
         current_player_index = (current_player_index + 1) % 2
+
+print("Draw")
 
 
 def main() -> None:
