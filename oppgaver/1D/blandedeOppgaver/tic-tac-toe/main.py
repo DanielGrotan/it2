@@ -23,7 +23,7 @@ def game_loop(board: Board, consecutive_to_win: int) -> None:
 
         current_player_index = (current_player_index + 1) % 2
 
-print("Draw")
+    print("Draw")
 
 
 def main() -> None:
