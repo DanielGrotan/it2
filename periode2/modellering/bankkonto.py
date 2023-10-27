@@ -6,12 +6,9 @@ class Bankkonto:
         self._eier = eier
         self._kontonummer = kontonummer
         self._saldo = 0
-
-        eier_fornavn = eier.hent_fornavn()
-        eier_etternavn = eier.hent_etternavn()
         
         print("Nyopprettet konto:")
-        print(f"  {"Eier".ljust(11)}: {eier_fornavn} {eier_etternavn}")
+        print(f"  {"Eier".ljust(11)}: {self._eier}")
         print(f"  {"Kontonummer".ljust(11)}: {self._kontonummer}")
         print(f"  {"Saldo".ljust(11)}: {self._saldo}")
     
@@ -57,7 +54,7 @@ class Bankkonto:
         return beløp
     
     def __str__(self) -> str:
-        eier_streng = f"  {"Eier".ljust(11)}: {self._eier.hent_fornavn()} {self._eier.hent_etternavn()}"
+        eier_streng = f"  {"Eier".ljust(11)}: {self._eier}"
         kontonummer_streng = f"  {"Kontonummer".ljust(11)}: {self._kontonummer}"
         saldo_streng = f"  {"Saldo".ljust(11)}: {self._saldo}"
 

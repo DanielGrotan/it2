@@ -12,3 +12,6 @@ class Person:
 
     def hent_telefonnummer(self) -> str:
         return self._telefonnummer
+
+    def __str__(self) -> str:
+        return f"{self._fornavn} {self._etternavn}"
