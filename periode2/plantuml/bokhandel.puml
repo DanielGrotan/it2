@@ -1,0 +1,29 @@
+@startuml bokhandel
+
+skinparam linetype ortho
+
+class Bok {
+    -tittel: string
+    -isbnNummer: string
+    -utgivelsesår: string
+    -baksidetekst: string
+}
+
+class Forfatter
+class Forlag
+class SkjønnlitterærBok
+class Sjanger
+class Fagbok
+class Fagområde
+
+Bok "0..*" o-- "1..*" Forfatter
+Bok "0..*" o-- "1 " Forlag
+
+Bok <|-- SkjønnlitterærBok
+Bok <|-- Fagbok
+
+SkjønnlitterærBok "0..*" o-- "1" Sjanger
+
+Fagbok "0..*" o-- "1" Fagområde
+
+@enduml
