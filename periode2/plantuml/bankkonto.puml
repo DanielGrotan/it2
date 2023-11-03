@@ -1,0 +1,42 @@
+@startuml bankkonto
+
+skinparam linetype ortho
+
+class Bankkonto {
+    -kontonummer: string
+    -saldo: float <<starter som 0>>
+    --
+    +motta_beløp()
+    +ta_ut_beløp()
+}
+
+class Sparekonto {
+    -maks_antall_årlige_uttak: int
+    -antall_uttak: int <<starter som 0>>
+    --
+    +motta_beløp()
+}
+
+class BSUKonto {
+    -maks_årlig_beløp_innsetting: float
+    -beløp_innsatt: float <<starter som 0>>
+    --
+    +ta_ut_beløp()
+}
+
+class Person {
+    -fornavn: string
+    -etternavn: string
+    -telefonnummer: string
+    --
+    +hent_fornavn(): string
+    +hent_etternavn(): string
+    +hent_telefonnummer(): string
+}
+
+Bankkonto <|-- Sparekonto
+Bankkonto <|-- BSUKonto
+
+Bankkonto "0..* " o-- "1" Person
+
+@enduml

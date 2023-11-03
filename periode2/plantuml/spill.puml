@@ -1,0 +1,10 @@
+@startuml spill
+
+class Figur
+class Spiller
+class Skurk
+
+Figur <|-- Spiller
+Figur <|-- Skurk
+
+@enduml
