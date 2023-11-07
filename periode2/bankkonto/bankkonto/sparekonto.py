@@ -29,20 +29,3 @@ class Sparekonto(Bankkonto):
             return beløp
 
         return 0
-
-
-def main() -> None:
-    person = Person("Hege", "Hermansen", "000 00 000")
-    konto = Sparekonto(person, "173873283", 3)
-
-    konto.motta_beløp(2000)
-    konto.ta_ut_beløp(100)
-    konto.ta_ut_beløp(100)
-    konto.ta_ut_beløp(100)
-    konto.ta_ut_beløp(200)
-
-    print(konto)
-
-
-if __name__ == "__main__":
-    main()
