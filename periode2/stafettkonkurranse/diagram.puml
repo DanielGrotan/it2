@@ -1,0 +1,39 @@
+@startuml diagram
+
+skinparam linetype ortho
+
+class Stafettkonkurranse {
+    lag: list[Lag]
+    distanse: float
+    --
+    konkurrer(antall_runder: int)
+}
+
+class Lag {
+    medlemmer: list[Person]
+    --
+    gjennomfør_løp(distanse: float)
+}
+
+class Idrettslag {
+    gutter: list[Person]
+    jenter: list[Person]
+    --
+    legg_til_medlem(person: Person)
+    trekk_lag(gutter_per_lag: int, jenter_per_lag: int): list[Lag]
+}
+
+class Person {
+    navn: str
+    kjønn: str
+    minimum_hastighet: float
+    maksimum_hastighet: float
+    --
+    løp(distanse: float): float
+}
+
+Stafettkonkurranse "1" --* "0..*" Lag
+Lag "1" --o "0..*" Person
+Idrettslag "1" --o "0..*" Person
+
+@enduml
