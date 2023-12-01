@@ -1,0 +1,63 @@
+@startuml modell
+
+skinparam linetype ortho
+
+class Platesamling {
+    -eier: Person
+    -album: dict[str, list[Album]] <<ordbok fra artist til album>>
+    --
+    +legg_til_album(album: Album)
+    +legg_til_artist(artist: Artist) <<legger til alle albumene til artisten>>
+    +__str__() -> str
+    +vis_album_navn(artist: Optional[Person] = None)
+    +vis_artister()
+}
+
+class Person {
+    -navn: str
+    --
+    +@property navn() -> str
+}
+
+class Artist {
+    album: list[Album]
+    --
+    +@property album() -> list[Album]
+    +opprett_album() -> Album
+}
+
+class Album {
+    -navn: str
+    -artist: Artist
+    -plateselskap: str
+    -utgivelsesår: int
+    --
+    +@property navn() -> str
+    +@property artist() -> Artist
+    +__str__() -> str
+    +vis_info()
+}
+
+class CD {
+    +__str__() -> str
+}
+
+class Vinyl {
+    hastighet: int <<enten 33 eller 45 rpm>>
+    farge: tuple[int, int, int] <<farge i rgb format>>
+    --
+    +__str__() -> str
+}
+
+Album <|-- CD
+Album <|-- Vinyl
+
+Person <|-- Artist
+
+Platesamling "0..*" o-- "1" Person
+Album "0..*" o-- "1" Platesamling
+Album  "0..*" o-- "1" Person
+Album "0..*" o-- "1" Artist
+
+
+@enduml
