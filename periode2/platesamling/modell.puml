@@ -3,27 +3,26 @@
 skinparam linetype ortho
 
 class Platesamling {
-    -eier: Person
+    -eier: Eier
     -album: dict[str, list[Album]] <<ordbok fra artist til album>>
     --
     +legg_til_album(album: Album)
-    +legg_til_artist(artist: Artist) <<legger til alle albumene til artisten>>
+    +legg_til_artist(artist: Artist)
     +__str__() -> str
     +vis_album_navn(artist: Optional[Person] = None)
     +vis_artister()
 }
 
-class Person {
+class Eier {
     -navn: str
     --
     +@property navn() -> str
 }
 
 class Artist {
-    album: list[Album]
+    -navn: str
     --
-    +@property album() -> list[Album]
-    +opprett_album() -> Album
+    +@property navn() -> str
 }
 
 class Album {
@@ -52,11 +51,9 @@ class Vinyl {
 Album <|-- CD
 Album <|-- Vinyl
 
-Person <|-- Artist
-
-Platesamling "0..*" o-- "1" Person
+Platesamling "0..*" o-- "1" Eier
 Album "0..*" o-- "1" Platesamling
-Album  "0..*" o-- "1" Person
+Album  "0..*" o-- "1" Eier
 Album "0..*" o-- "1" Artist
 
 
