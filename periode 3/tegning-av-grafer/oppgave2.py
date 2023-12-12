@@ -11,7 +11,7 @@ def plot_dice_throws(n_throws: int, output_path: str | None = None) -> None:
         dice_throw = random.randint(1, 6)
         throw_results[dice_throw - 1] += 1
 
-    plt.plot(range(1, 7), throw_results)
+    plt.scatter(range(1, 7), throw_results)
 
     plt.title("Antall terningkast med ulike antall øyne")
     plt.ylabel("Antall kast")
