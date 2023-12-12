@@ -4,25 +4,14 @@ skinparam linetype ortho
 
 class Platesamling {
     -eier: Eier
-    -album: dict[str, list[Album]] <<ordbok fra artist til album>>
+    -album: dict[str, list[Album]] <<ordbok fra artistnavn til album>>
     --
     +legg_til_album(album: Album)
     +legg_til_artist(artist: Artist)
-    +__str__() -> str
-    +vis_album_navn(artist: Optional[Person] = None)
+    +vis_album_navn(artist: Optional[Artist] = None)
     +vis_artister()
-}
-
-class Eier {
-    -navn: str
-    --
-    +@property navn() -> str
-}
-
-class Artist {
-    -navn: str
-    --
-    +@property navn() -> str
+    +vis_info()
+    +__str__() -> str
 }
 
 class Album {
@@ -33,8 +22,8 @@ class Album {
     --
     +@property navn() -> str
     +@property artist() -> Artist
-    +__str__() -> str
     +vis_info()
+    +__str__() -> str
 }
 
 class CD {
@@ -42,19 +31,32 @@ class CD {
 }
 
 class Vinyl {
-    hastighet: int <<enten 33 eller 45 rpm>>
-    farge: tuple[int, int, int] <<farge i rgb format>>
+    -hastighet: int <<enten 33 eller 45 rpm>>
+    -farge: tuple[int, int, int] <<farge i rgb format>>
     --
     +__str__() -> str
 }
 
+class Person {
+    -navn: str
+    --
+    +@property navn() -> str
+    +__str__() -> str
+}
+
+class Eier
+
+class Artist
+
+Platesamling "0..*" *--- "1" Eier : < eier
+Platesamling "1" ---o "0..*" Album : > inneholder
+
+Album "0..*" *-- "1" Artist : < har laget
+
+Person <|-- Eier
+Person <|-- Artist
+
 Album <|-- CD
 Album <|-- Vinyl
-
-Platesamling "0..*" o-- "1" Eier
-Album "0..*" o-- "1" Platesamling
-Album  "0..*" o-- "1" Eier
-Album "0..*" o-- "1" Artist
-
 
 @enduml
