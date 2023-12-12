@@ -20,6 +20,8 @@ def task_a() -> None:
         plt.plot(x, function(x), color, label=f"${name} = {expression}$")
 
     plt.legend()
+    plt.axhline(y=0, color="black")
+    plt.axvline(x=0, color="black")
     plt.grid()
     plt.title("Grafene til $f(x)$, $f'(x)$ og $f''(x)$")
 
@@ -43,6 +45,8 @@ def task_b() -> None:
         axs, functions, function_names, function_expressions, colors
     ):
         ax.set_title(f"Grafen til ${name}$")
+        ax.axhline(y=0, color="black")
+        ax.axvline(x=0, color="black")
         ax.plot(x, function(x), color, label=f"${name} = {expression}$")
         ax.legend()
 
