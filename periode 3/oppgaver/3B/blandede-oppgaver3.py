@@ -35,6 +35,8 @@ def task_b(data: dict[str, list[str] | list[int]]) -> None:
 def task_c(data: dict[str, list[str] | list[int]]) -> None:
     sum_over_1000 = sum(data["Fritidsbygg"][13:])
 
+    print(sum_over_1000)
+
     data["Meter over havet"] = data["Meter over havet"][:13] + ["Over 1000 m"]
     data["Fritidsbygg"] = data["Fritidsbygg"][:13] + [sum_over_1000]
 

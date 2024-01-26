@@ -364,17 +364,41 @@ def plot_export_import() -> None:
         -8235,
     ]
 
-    plt.plot(years, exports, label="Eksport")
-    plt.plot(years, imports, label="Import")
+    largest_value = max(map(max, [imports, exports])) * 1.05
 
-    plt.legend()
+    fig, axs = plt.subplots(2, 2)
+
+    chunk_size = len(years) // 4
+
+    for i, ax in enumerate(axs.flatten()):
+        slice_ = slice(i * chunk_size, (i + 1) * chunk_size if i != 4 - 1 else None)
+
+        years_ = np.array(years[slice_])
+
+        ax.bar(years_ + 0.2, exports[slice_], width=0.4, label="Eksport")
+        ax.bar(
+            years_ - 0.2,
+            [abs(value) for value in imports[slice_]],
+            width=0.4,
+            label="Import",
+        )
+
+        ax.set_xticks(years_)
+        ax.tick_params(axis="x", rotation=30)
+        ax.set_ylim(0, largest_value)
+
+        ax.set_title(f"Eksport og import mellom ({years_[0]} - {years_[-1]})")
+
+        ax.legend()
+
+    fig.tight_layout()
 
     plt.show()
 
 
 def main() -> None:
-    plot_grade_distributions()
-    plot_track_results()
+    # plot_grade_distributions()
+    # plot_track_results()
     plot_export_import()
 
 
