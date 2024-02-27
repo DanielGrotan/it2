@@ -1,0 +1,28 @@
+@startuml todo-list
+
+skinparam linetype ortho
+
+class Todo {
+    id: int <<unique>>
+    owner: int
+    title: str
+    completed: bool
+}
+
+class TodoList {
+    -todos: list[Todo]
+    --
+    get_todos() -> list[Todo]
+}
+
+class TodoListApp {
+    -root
+    -todo_list: TodoList
+    --
+    -create_gui() -> None
+}
+
+TodoListApp "1" --* "1" TodoList
+TodoList "1" --* "0..*" Todo
+
+@enduml
